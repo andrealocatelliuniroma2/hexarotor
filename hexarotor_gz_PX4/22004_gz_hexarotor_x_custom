@@ -1,0 +1,90 @@
+#!/bin/sh
+#
+# @name Gazebo hexarotor_x custom (
+#
+# @type Hexarotor x
+#
+
+. ${R}etc/init.d/rc.mc_defaults
+
+PX4_SIMULATOR=${PX4_SIMULATOR:=gz}
+PX4_GZ_WORLD=${PX4_GZ_WORLD:=default}
+PX4_SIM_MODEL=${PX4_SIM_MODEL:=hexarotor_x_custom}
+
+# MAV_TYPE_HEXAROTOR
+param set-default MAV_TYPE 13
+
+param set-default SIM_GZ_EN 1
+
+param set-default SENS_EN_GPSSIM 1
+param set-default SENS_EN_BAROSIM 0
+param set-default SENS_EN_MAGSIM 1
+
+# --- Control allocation: PX4 Hexarotor X, frame FRD ---
+# Numerazione ufficiale PX4 (0-indexed), L = 0.34 m (FY680)
+# KM > 0 = CCW, KM < 0 = CW
+param set-default CA_AIRFRAME 0
+param set-default CA_ROTOR_COUNT 6
+
+# Rotor 0: destra, CW
+param set-default CA_ROTOR0_PX 0.0
+param set-default CA_ROTOR0_PY 0.34
+param set-default CA_ROTOR0_KM -0.05
+# Rotor 1: sinistra, CCW
+param set-default CA_ROTOR1_PX 0.0
+param set-default CA_ROTOR1_PY -0.34
+param set-default CA_ROTOR1_KM 0.05
+# Rotor 2: avanti-sinistra, CW
+param set-default CA_ROTOR2_PX 0.2944
+param set-default CA_ROTOR2_PY -0.17
+param set-default CA_ROTOR2_KM -0.05
+# Rotor 3: dietro-destra, CCW
+param set-default CA_ROTOR3_PX -0.2944
+param set-default CA_ROTOR3_PY 0.17
+param set-default CA_ROTOR3_KM 0.05
+# Rotor 4: avanti-destra, CCW
+param set-default CA_ROTOR4_PX 0.2944
+param set-default CA_ROTOR4_PY 0.17
+param set-default CA_ROTOR4_KM 0.05
+# Rotor 5: dietro-sinistra, CW
+param set-default CA_ROTOR5_PX -0.2944
+param set-default CA_ROTOR5_PY -0.17
+param set-default CA_ROTOR5_KM -0.05
+
+# --- Mapping ESC verso Gazebo: motorNumber 0..5 nell'SDF ---
+param set-default SIM_GZ_EC_FUNC1 101
+param set-default SIM_GZ_EC_FUNC2 102
+param set-default SIM_GZ_EC_FUNC3 103
+param set-default SIM_GZ_EC_FUNC4 104
+param set-default SIM_GZ_EC_FUNC5 105
+param set-default SIM_GZ_EC_FUNC6 106
+
+param set-default SIM_GZ_EC_MIN1 150
+param set-default SIM_GZ_EC_MIN2 150
+param set-default SIM_GZ_EC_MIN3 150
+param set-default SIM_GZ_EC_MIN4 150
+param set-default SIM_GZ_EC_MIN5 150
+param set-default SIM_GZ_EC_MIN6 150
+
+param set-default SIM_GZ_EC_MAX1 1000
+param set-default SIM_GZ_EC_MAX2 1000
+param set-default SIM_GZ_EC_MAX3 1000
+param set-default SIM_GZ_EC_MAX4 1000
+param set-default SIM_GZ_EC_MAX5 1000
+param set-default SIM_GZ_EC_MAX6 1000
+
+# Da ritarare quando l'SDF (massa + motorConstant) e' definito:
+# hexa ha piu' margine di un quad a parita' di motori
+param set-default MPC_THR_HOVER 0.50
+
+# Fix IMU integration rate
+param set IMU_INTEG_RATE 100
+param save
+
+# Useful parameters for generic simulations
+param set COM_RC_IN_MODE 1
+param set COM_RC_OVERRIDE 0
+param set COM_DISARM_LAND -1.0
+param set COM_DISARM_PRFLT -1.0
+param set COM_OBL_RC_ACT 5
+param save
