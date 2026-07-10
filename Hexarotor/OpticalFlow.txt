@@ -1,0 +1,18 @@
+OpticalFlow :
+
+1) ARK FLOW : https://arkelectron.com/product/ark-flow/
+
+2) PMW3901 (https://docs.holybro.com/pmw3901-optical-flow-sensor):
+
+	- Bitcraze Flow Breakout : EndOfLife
+
+	- Tindie PMW3901 Optical Flow Sensor : doesn't have a distance sensor onboard
+
+	- AlienTek ATK-PMW3901 : The board also incorporates a distance sensor (we recommend that you use an 					 external distance sensor)
+
+	- Hex HereFlow PMW3901 Optical Flow Sensor : https://docs.cubepilot.org/user-guides/flow-senor/here-flow
+						     https://www.mybotshop.de/CubePilot-HereFlow_1
+
+	- Holybro PMW3901 Optical Flow Sensor : The board doesn't include a distance sensor onboard
+
+	- Thone ThoneFlow-3901U : The board doesn't include a distance sensor onboard

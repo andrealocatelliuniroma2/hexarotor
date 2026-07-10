@@ -1,0 +1,6 @@
+FRAME 680 MM :http://www.tarotrc.com/Product/Detail.aspx?Lang=en&Id=cba72cde-2206-4fb9-94e4-1268b7be4ac4
+MOTOR U3 700KV : https://store.tmotor.com/product/u3-motor-u-power.html
+MOTOR MOUNT : http://www.tarotrc.com/Product/Detail.aspx?Lang=en&Id=b2898f90-0478-4432-ae33-132907c2cf52
+ESC : 30A
+BATTERY : 12000 mAh 4S
+PROPELLERS : 12*4CF

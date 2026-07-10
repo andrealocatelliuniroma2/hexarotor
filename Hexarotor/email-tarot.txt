@@ -1,0 +1,23 @@
+tarotrc@hotmail.com
+
+Technical inquiry regarding Tarot FY680 Iron Man Frame (TL68B01) - Configuration and Availability
+
+
+Dear Tarot Support Team,
+
+I am interested in purchasing the Tarot FY680 Iron Man Carbon Fiber Hexacopter Frame (Product ID: TL68B01 , http://tarotrc.com/Product/Detail.aspx?Lang=en&Id=cba72cde-2206-4fb9-94e4-1268b7be4ac4) listed on your website, and I would like to ask a few technical and commercial questions.
+
+1. Package Content
+Could you please clarify exactly what is included in the retail price of the frame?Specifically, does it include all the related components shown on the product page , or are some parts sold separately?(http://tarotrc.com/Product/Detail.aspx?Lang=en&Id=cba72cde-2206-4fb9-94e4-1268b7be4ac4) ?
+
+2. Motor and Propeller Configuration for 4S Setup
+Your website (http://tarotrc.com/Product/Detail.aspx?Lang=en&Id=cba72cde-2206-4fb9-94e4-1268b7be4ac4) description for the FY680 frame suggests using 2212/2216/2814 series motors (880-1000KV) with 10 to 13-inch propellers. However, I noticed an inconsistency regarding the 2212 motors: according to the official datasheet (http://www.tarotrc.com/Product/Detail.aspx?Lang=en&Id=86ea9211-dda2-4db3-a3f9-60fec2bf7229) for your Tarot 2212 920KV motor (TL400X22), the propeller on the datasheet is 9443 and not 10 to 13-inch .
+I am planning to power this hexacopter with a high-capacity 12000mAh 4S battery, aiming for a total takeoff weight of approximately 3000g (including the frame and payload). Since I am considering a 2212 motor spinning 10x3.8-inch propellers, I want to make sure this setup is safe.
+Could you please recommend the ideal motor model from your current catalog and the corresponding propeller size that can safely and efficiently handle this configuration?
+Furthermore, if moving up to the 2216 or 2814 series is recommended, would it be better to choose lower KV options (e.g., lower than 880-1000KV) combined with different propeller sizes?
+
+3. Product Availability
+Is the FY680 frame (TL68B01) currently in stock and ready to ship? If it is temporarily backordered, what is the estimated lead time for production and delivery?
+
+Thank you very much for your time, technical assistance, and support. I look forward to your guidance so I can finalize the components for my project.
+Best regards

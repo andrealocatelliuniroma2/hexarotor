@@ -1,0 +1,18 @@
+-https://www.nkon.nl/en/molicel-inr18650-m35a-3500mah-10a.html
+
+	1) [6S6P] :	6S 21000 mAh , 1728g  (2.8C)
+	2) [6S7P] :	6S 24500 mAh , 2016g  (2.8C)
+
+
+-https://www.nkon.nl/en/molicel-inr21700-m50a-4800mah-15a.html
+
+	[6S5P] :	6S 24000 mAh , 2040g (3C)
+
+
+-https://www.nkon.nl/en/molicel-inr21700-p50b-5000mah-50a.html
+
+	[6S5P] :	6S 25000 mAh , 2040g (10/12 C)
+
+-https://www.nkon.nl/en/eve-inr21700-50pl-5000mah-125a.html
+
+	[6S5P] :	6S 25000 mAh , 2160g (25 C)
